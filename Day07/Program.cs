@@ -14,11 +14,11 @@ ImmutableList<(long Target, ImmutableList<long> Operands)> input = File
 
 bool IsMatch(long target, long current, ImmutableList<long> operands, bool useConcatenationOperator) =>
 	(operands.Count == 0 && target == current) ||
-		(operands.Count > 0 &&
-			(IsMatch(target, current + operands[0], operands.RemoveAt(0), useConcatenationOperator) ||
-			IsMatch(target, current * operands[0], operands.RemoveAt(0), useConcatenationOperator) ||
-			(useConcatenationOperator &&
-				IsMatch(target, long.Parse(current.ToString() + operands[0]), operands.RemoveAt(0), useConcatenationOperator))));
+	(operands.Count > 0 &&
+		(IsMatch(target, current + operands[0], operands.RemoveAt(0), useConcatenationOperator) ||
+		IsMatch(target, current * operands[0], operands.RemoveAt(0), useConcatenationOperator) ||
+		(useConcatenationOperator &&
+			IsMatch(target, long.Parse(current.ToString() + operands[0]), operands.RemoveAt(0), useConcatenationOperator))));
 
 long resultPartA = input.Sum(item => IsMatch(item.Target, 0, item.Operands, false) ? item.Target : 0);
 long resultPartB = input.Sum(item => IsMatch(item.Target, 0, item.Operands, true) ? item.Target : 0);
