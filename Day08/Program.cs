@@ -4,7 +4,7 @@ string inputFilename = useExampleInput
 	? "exampleInput.txt"
 	: "input.txt";
 
-var inputLines = File.ReadAllLines(inputFilename);
+string[] inputLines = File.ReadAllLines(inputFilename);
 Dictionary<char, List<(char Character, int Row, int Column)>> cellsForNodeType = inputLines
 	.SelectMany((line, rowIndex) =>
 		line.Select((item, columnIndex) => (Character: item, Row: rowIndex, Column: columnIndex)))
