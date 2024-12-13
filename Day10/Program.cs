@@ -23,8 +23,8 @@ Console.WriteLine($"B: Sum of trail ratings is {resultPartB}."); // 81, 1801
 IEnumerable<(int Row, int Column)> ReachableTopPositions((int Row, int Column) position) =>
 	map[position.Row][position.Column] == '9'
 		? [position]
-		: new[] { (Dx: 1, Dy: 0), (Dx: 0, Dy: 1), (Dx: -1, Dy: 0), (Dx: 0, Dy: -1) }
-			.Select(item => (Row: position.Row + item.Dy, Column: position.Column + item.Dx))
+		: new (int DeltaRow, int DeltaColumn)[] { (0, 1), (1, 0), (0, -1), (-1, 0) }
+			.Select(item => (Row: position.Row + item.DeltaRow, Column: position.Column + item.DeltaColumn))
 			.Where(item =>
 				item.Row >= 0 && item.Row < map.Count &&
 				item.Column >= 0 && item.Column < map[0].Length)

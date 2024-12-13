@@ -6,9 +6,7 @@ bool useExampleInput = false;
 	? ("exampleInputA.txt", "exampleInputB.txt")
 	: ("input.txt", "input.txt");
 
-string inputPartA = File.ReadAllText(inputFilenamePartA);
-string inputPartB = File.ReadAllText(inputFilenamePartB);
-Func<string, bool, int> findProductSum = (input, ignoreDoDont) => Regex
+Func<string, bool, int> calculateProductSum = (input, ignoreDoDont) => Regex
 	.Matches(input, @"do\(\)|don't\(\)|mul\((\d+),(\d+)\)")
 	.Aggregate(
 		(AddProducts: true, ProductSum: 0),
@@ -21,9 +19,9 @@ Func<string, bool, int> findProductSum = (input, ignoreDoDont) => Regex
 				: acc
 		})
 	.ProductSum;
-int productA = findProductSum(inputPartA, true);
-int productB = findProductSum(inputPartB, false);
+int productSumA = calculateProductSum(File.ReadAllText(inputFilenamePartA), true);
+int productSumB = calculateProductSum(File.ReadAllText(inputFilenamePartB), false);
 
 Console.WriteLine("Day 3");
-Console.WriteLine($"A: Product sum is {productA}."); // 161, 183788984
-Console.WriteLine($"B: do to don't product sum is {productB}."); // 48, 62098619
+Console.WriteLine($"A: Product sum is {productSumA}."); // 161, 183788984
+Console.WriteLine($"B: do to don't product sum is {productSumB}."); // 48, 62098619
