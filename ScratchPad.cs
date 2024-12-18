@@ -9,3 +9,12 @@
 //				.Select(rowIndex => input[rowIndex][columnIndex])
 //				.ToArray()))
 //		.ToList();
+
+//void PrintGrid(ImmutableHashSet<Position> occupiedPositions)
+//{
+//	var grid = Enumerable.Range(0, widthAndHeight).Select(index => Enumerable.Repeat('.', widthAndHeight).ToArray()).ToList();
+//	foreach (Position occupiedPosition in occupiedPositions)
+//		grid[occupiedPosition.Y][occupiedPosition.X] = '#';
+//	foreach (char[] rowChars in grid)
+//		Console.WriteLine(new string(rowChars));
+//}
