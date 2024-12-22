@@ -52,8 +52,8 @@ long FindCopyPartB(long number, int index) => Enumerable
 	.Range(0, 8)
 	.Select(i =>
 		RunComputerProgram(number + i, 0, 0, memoryPartB).First() == memoryPartB[memoryPartB.Count - index - 1]
-		? index == memoryPartB.Count - 1
-			? number + i // The last digit was found
-			: FindCopyPartB((number + i) << 3, index + 1) // Digit found, continue finding more digits.
-		: -1) // No digit found
+			? index == memoryPartB.Count - 1
+				? number + i // The last digit was found
+				: FindCopyPartB((number + i) << 3, index + 1) // Digit found, continue finding more digits.
+			: -1) // No digit found
 	.FirstOrDefault(item => item >= 0, -1); // return the first matching number, or -1 if no match was found.

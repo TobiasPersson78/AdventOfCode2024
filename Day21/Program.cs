@@ -34,7 +34,7 @@ string directionsByPriority = "<v^>";
 ConcurrentDictionary<(char FromButton, char ToButton, int Level), long> memoizedCountDirectionalMoves = new();
 
 long resultPartA = input.Sum(item => CountDirectionalMovesOverMultipleLevels(item, 2));
-long resultPartB = input.Sum(item => CountDirectionalMovesOverMultipleLevels(item, 25)); ;
+long resultPartB = input.Sum(item => CountDirectionalMovesOverMultipleLevels(item, 25));
 
 Console.WriteLine("Day 21");
 Console.WriteLine($"A: The sum of complexities is {resultPartA}."); // 126384, 203734
