@@ -23,6 +23,6 @@ bool IsMatch(long target, long current, ImmutableList<long> operands, bool useCo
 long resultPartA = input.Sum(item => IsMatch(item.Target, 0, item.Operands, false) ? item.Target : 0);
 long resultPartB = input.Sum(item => IsMatch(item.Target, 0, item.Operands, true) ? item.Target : 0);
 
-Console.WriteLine("Day 7");
+Console.WriteLine("Day 7 - Bridge Repair");
 Console.WriteLine($"A: {resultPartA}."); // 3749, 5702958180383
 Console.WriteLine($"B: {resultPartB}."); // 11387, 92612386119138

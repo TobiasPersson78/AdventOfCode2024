@@ -17,6 +17,6 @@ int sumOfDistances = sortedLeft
 int sumOfSimilarities = sortedLeft
 	.Sum(left => left * sortedRight.Count(right => right == left));
 
-Console.WriteLine("Day 1");
+Console.WriteLine("Day 1: Historian Hysteria");
 Console.WriteLine($"A: Sum of distances is {sumOfDistances}."); // 11, 1882714
 Console.WriteLine($"B: Sum of similarities is {sumOfSimilarities}."); // 31, 19437052

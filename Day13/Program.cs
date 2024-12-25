@@ -17,7 +17,7 @@ long resultPartB = clawMachines.Sum(item =>
 	SolveLinearEquation(
 		item with { TargetX = item.TargetX + 10000000000000L, TargetY = item.TargetY + 10000000000000L }));
 
-Console.WriteLine("Day 13");
+Console.WriteLine("Day 13 - Claw Contraption");
 Console.WriteLine($"A: The fewest required tokens is {resultPartA}."); // 480, 27105
 Console.WriteLine($"B: The fewest required tokens is {resultPartB}."); // 875318608908, 101726882250942
 

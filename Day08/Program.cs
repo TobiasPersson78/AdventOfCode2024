@@ -35,6 +35,6 @@ Func<bool, IList<(int Row, int Column)>> getDistinctAntiNodes = (bool useHarmoni
 		.Distinct()
 		.ToList();
 
-Console.WriteLine("Day 8");
+Console.WriteLine("Day 8 - Resonant Collinearity");
 Console.WriteLine($"A: Unique antinodes locations: {getDistinctAntiNodes(false).Count}"); // 14, 276
 Console.WriteLine($"B: Unique antinodes locations considering harmonics: {getDistinctAntiNodes(true).Count}."); // 34, 991

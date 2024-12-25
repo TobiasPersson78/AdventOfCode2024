@@ -59,6 +59,6 @@ for (int endIndex = fileIdLengthAndEmptyBlocks.Count - 1; endIndex > 0; --endInd
 }
 long resultPartB = calculateChecksum(singleBlocks(fileIdLengthAndEmptyBlocks));
 
-Console.WriteLine("Day 9");
+Console.WriteLine("Day 9 - Disk Fragmenter");
 Console.WriteLine($"A: Checksum is {resultPartA}"); // 1928, 6216544403458
 Console.WriteLine($"B: Checksum is {resultPartB}"); // 2858, 6237075041489

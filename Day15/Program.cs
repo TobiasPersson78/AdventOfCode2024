@@ -17,7 +17,7 @@ List<List<char>> mapPartB = input[0]
 int resultPartA = GetGpsCoordinates(TraverseMap(mapPartA)).Sum();
 int resultPartB = GetGpsCoordinates(TraverseMap(mapPartB)).Sum();
 
-Console.WriteLine("Day 15");
+Console.WriteLine("Day 15 - Warehouse Woes");
 Console.WriteLine($"A: The sum of all boxes' GPS coordinates is {resultPartA}."); // 10092, 1441031
 Console.WriteLine($"B: The sum of all boxes' GPS coordinates is {resultPartB}."); // 9021, 1425169
 

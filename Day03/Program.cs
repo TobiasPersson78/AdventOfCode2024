@@ -22,6 +22,6 @@ Func<string, bool, int> calculateProductSum = (input, ignoreDoDont) => Regex
 int productSumA = calculateProductSum(File.ReadAllText(inputFilenamePartA), true);
 int productSumB = calculateProductSum(File.ReadAllText(inputFilenamePartB), false);
 
-Console.WriteLine("Day 3");
+Console.WriteLine("Day 3 - Mull It Over");
 Console.WriteLine($"A: Product sum is {productSumA}."); // 161, 183788984
 Console.WriteLine($"B: do to don't product sum is {productSumB}."); // 48, 62098619

@@ -16,7 +16,7 @@ IList<(int Row, int Column)> trailHeads =
 int resultPartA = trailHeads.Sum(item => ReachableTopPositions(item).Distinct().Count());
 int resultPartB = trailHeads.Sum(item => ReachableTopPositions(item).Count());
 
-Console.WriteLine("Day 10");
+Console.WriteLine("Day 10 - Hoof It");
 Console.WriteLine($"A: Sum of number of reachable tops is {resultPartA}."); // 36, 822
 Console.WriteLine($"B: Sum of trail ratings is {resultPartB}."); // 81, 1801
 

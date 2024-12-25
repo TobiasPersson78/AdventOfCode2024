@@ -28,7 +28,7 @@ int resultPartB = printOrderInput
 	.Select(item => OrderWrongInputReversed(item).Reverse().ToList())
 	.Sum(item => item[item.Count / 2]);
 
-Console.WriteLine("Day 5");
+Console.WriteLine("Day 5 - Print Queue");
 Console.WriteLine($"A: Sum of middle pages of correctly ordered printouts is {resultPartA}."); // 143, 5275
 Console.WriteLine($"B: Sum of middle pages of ordered incorrectly ordered printouts is {resultPartB}."); // 123, 6191
 

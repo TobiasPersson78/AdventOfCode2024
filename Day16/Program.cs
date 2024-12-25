@@ -54,7 +54,7 @@ while (nodesToCheck.Count > 0)
 	nodesToCheck.EnqueueRange(GetPossibleMovements(positionAndDirection, cost, visited).Select(item => (item, item.Cost)));
 }
 
-Console.WriteLine("Day 16");
+Console.WriteLine("Day 16 - Reindeer Maze");
 Console.WriteLine($"A: The minimum point score is {minimumCostToEnd}."); // 7036, 95444
 Console.WriteLine($"B: The best number of nodes is {nodesInBestPaths.Count}."); // 45, 513
 

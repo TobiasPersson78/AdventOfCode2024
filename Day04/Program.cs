@@ -35,6 +35,6 @@ int masCrossedCount = Enumerable
 		.Range(1, matrix[0].Length - 2)
 		.Count(columnIndex => IsMasInX(rowIndex, columnIndex)));
 
-Console.WriteLine("Day 4");
+Console.WriteLine("Day 4 - Ceres Search");
 Console.WriteLine($"A: Number of XMAS occurrences is {xmasCount}."); // 18, 2507
 Console.WriteLine($"B: Number of MAS in X occurrences is {masCrossedCount}."); // 9, 1969

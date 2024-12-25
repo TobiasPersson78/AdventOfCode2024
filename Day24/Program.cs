@@ -82,7 +82,7 @@ if (!useExampleInput)
 	resultPartB = string.Join(',', replacedWires.Order());
 }
 
-Console.WriteLine("Day 24");
+Console.WriteLine("Day 24 - Crossed Wires");
 Console.WriteLine($"A: The z number output is {resultPartA}."); // 2024, 55544677167336
 Console.WriteLine($"B: The swapped wires are {resultPartB}."); // "Not applicable", "gsd,kth,qnf,tbt,vpm,z12,z26,z32"
 

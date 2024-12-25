@@ -24,6 +24,6 @@ long Step(string value, int remainingSteps) =>
 long resultPartA = input.Sum(item => Step(item, 25));
 long resultPartB = input.AsParallel().Sum(item => Step(item, 75));
 
-Console.WriteLine("Day 11");
+Console.WriteLine("Day 11 - Plutonian Pebbles");
 Console.WriteLine($"A: The number of stones after 25 blinks is {resultPartA}."); // 55312, 194557
 Console.WriteLine($"B: The number of stones after 75 blinks is {resultPartB}."); // 65601038650482, 231532558973909

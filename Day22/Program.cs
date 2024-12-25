@@ -37,7 +37,7 @@ foreach (IEnumerable<(int Price, PriceChanges Changes)> pricesAndChangesForInput
 
 int resultPartB = sumOfPriceForChanges.Values.Max();
 
-Console.WriteLine("Day 22");
+Console.WriteLine("Day 22 - Monkey Market");
 Console.WriteLine($"A: The sum of the 2000th secret numbers is {resultPartA}."); // 37327623, 15613157363
 Console.WriteLine($"B: The maximum number of bananas one can get is {resultPartB}."); // 23, 1784
 

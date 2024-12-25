@@ -14,7 +14,7 @@ ConcurrentDictionary<(string Design, int Offset), long> numberOfMatchesForDesign
 int resultPartA = designs.AsParallel().Count(item => NumberOfMatches(item, 0) > 0);
 long resultPartB = designs.AsParallel().Sum(item => NumberOfMatches(item, 0));
 
-Console.WriteLine("Day 19");
+Console.WriteLine("Day 19 - Linen Layout");
 Console.WriteLine($"A: The number of possible designs is {resultPartA}."); // 6, 344
 Console.WriteLine($"B: The number of ways to arrange all possible designs is {resultPartB}."); // 16, 996172272010026
 

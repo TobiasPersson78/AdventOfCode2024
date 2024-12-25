@@ -34,7 +34,7 @@ List<IEnumerable<(Position From, Position To, int SavedSteps)>> cheatsForCheatLe
 int resultPartA = cheatsForCheatLength[0].Count(item => item.SavedSteps >= minCountCheatLimit);
 int resultPartB = cheatsForCheatLength[1].Count(item => item.SavedSteps >= minCountCheatLimit);
 
-Console.WriteLine("Day 20");
+Console.WriteLine("Day 20 - Race Condition");
 Console.WriteLine($"A: The number of cheats of max 2 steps saving at least {minCountCheatLimit} steps is {resultPartA}."); // 1, 1317
 Console.WriteLine($"B: The number of cheats of max 20 steps saving at least {minCountCheatLimit} steps is {resultPartB}."); // 285, 982474
 

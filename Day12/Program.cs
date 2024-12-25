@@ -25,7 +25,7 @@ foreach (Position position in allNodes)
 	resultPartB += nodes.Count * corners;
 }
 
-Console.WriteLine("Day 12");
+Console.WriteLine("Day 12 - Garden Groups");
 Console.WriteLine($"A: Fence cost is {resultPartA}."); // 1930, 1433460
 Console.WriteLine($"B: Fence cost is {resultPartB}."); // 1206, 855082
 

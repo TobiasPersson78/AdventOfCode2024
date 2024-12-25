@@ -26,7 +26,7 @@ List<List<int>> keys = locksAndKeys
 int resultPartA = locks.Sum(aLock =>
 	keys.Count(aKey => aLock.Zip(aKey).All(item => item.First + item.Second <= 5)));
 
-Console.WriteLine("Day 25");
+Console.WriteLine("Day 25 - Code Chronicle");
 Console.WriteLine($"A: The number of unique lock/key pairs that fit is {resultPartA}."); // 3, 2854
 
 int CountVerticalHeight(string[] matrix, int column, char charToCount) => Enumerable

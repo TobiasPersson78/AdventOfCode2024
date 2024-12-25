@@ -29,7 +29,7 @@ while (maxItemsToTake - minItemsToTake > 1)
 }
 string resultPartB = input[maxItemsToTake - 1].X + "," + input[maxItemsToTake - 1].Y;
 
-Console.WriteLine("Day 18");
+Console.WriteLine("Day 18 - RAM Run");
 Console.WriteLine($"A: The minimum number of steps is {resultPartA}."); // 22, 318
 Console.WriteLine($"B: The end-blocking position is {resultPartB}."); // "6,1", "56,29"
 

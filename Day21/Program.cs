@@ -36,7 +36,7 @@ ConcurrentDictionary<(char FromButton, char ToButton, int Level), long> memoized
 long resultPartA = input.Sum(item => CountDirectionalMovesOverMultipleLevels(item, 2));
 long resultPartB = input.Sum(item => CountDirectionalMovesOverMultipleLevels(item, 25));
 
-Console.WriteLine("Day 21");
+Console.WriteLine("Day 21 - Keypad Conundrum");
 Console.WriteLine($"A: The sum of complexities is {resultPartA}."); // 126384, 203734
 Console.WriteLine($"B: The sum of complexities is {resultPartB}."); // 154115708116294, 246810588779586
 

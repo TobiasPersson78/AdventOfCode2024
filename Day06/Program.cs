@@ -14,7 +14,7 @@ int loopCountPartB = visitedCellsPartA
 	.AsParallel()
 	.Count(potentialPlacementForLoop => TraverseMap(potentialPlacementForLoop).IsLoop);
 
-Console.WriteLine("Day 6");
+Console.WriteLine("Day 6 - Guard Gallivant");
 Console.WriteLine($"A: Number of cells visited by the guard is {visitedCellsPartA.Count}."); // 41, 4826
 Console.WriteLine($"B: Number of potential loop placements is {loopCountPartB}."); // 6, 1721
 

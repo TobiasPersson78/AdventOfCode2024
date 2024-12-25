@@ -11,7 +11,7 @@ List<long> memoryPartB = ReadNumbers(inputFilenamePartB).Skip(3).ToList();
 string resultPartA = string.Join(',', RunComputerProgram(inputPartA[0], inputPartA[1], inputPartA[3], inputPartA[3..]));
 long resultPartB = FindCopyPartB(0, 0);
 
-Console.WriteLine("Day 17");
+Console.WriteLine("Day 17 - Chronospatial Computer");
 Console.WriteLine($"A: The output string is {resultPartA}."); // "4,6,3,5,6,3,5,2,1,0", "1,6,7,4,3,0,5,0,6"
 Console.WriteLine($"B: The register value that clones the program is {resultPartB}."); // 117440, 216148338630253
 

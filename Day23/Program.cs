@@ -35,7 +35,7 @@ BronKerboshAlgorithm(
 	maximumCliques);
 string resultPartB = string.Join(',', maximumCliques.MaxBy(item => item.Count)!.Order());
 
-Console.WriteLine("Day 23");
+Console.WriteLine("Day 23 - LAN Party");
 Console.WriteLine($"A: The number of sets containing at least one 't' is {resultPartA}."); // 7, 1302
 Console.WriteLine($"B: The password is {resultPartB}."); // "co,de,ka,ta", "cb,df,fo,ho,kk,nw,ox,pq,rt,sf,tq,wi,xz"
 

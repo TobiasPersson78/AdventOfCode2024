@@ -28,7 +28,7 @@ var safetyFactor = ((int TopLeft, int TopRight, int BottomLeft, int BottomRight)
 int resultPartA = safetyFactor(countQuadrants(moveSteps(robots, 100)));
 int resultPartB = Enumerable.Range(1, int.MaxValue).First(steps => moveSteps(robots, steps).Distinct().Count() == robots.Count);
 
-Console.WriteLine("Day 14");
+Console.WriteLine("Day 14 - Restroom Redoubt");
 Console.WriteLine($"A: The safety factor is {resultPartA}."); // 12, 217328832
 Console.WriteLine($"B: The number of seconds is {resultPartB}."); // 1 (but really not applicable), 7412
 

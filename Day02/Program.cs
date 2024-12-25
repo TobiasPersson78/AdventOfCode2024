@@ -24,6 +24,6 @@ int numberOfSafeReportsWithDampener = matrix.Count(row =>
 	acceptableDecrease(row) ||
 	acceptableAfterDampening(row));
 
-Console.WriteLine("Day 2");
+Console.WriteLine("Day 2 - Red-Nosed Reports");
 Console.WriteLine($"A: Number of safe reports is {numberOfSafeReports}."); // 2, 463
 Console.WriteLine($"B: Number of safe reports with dampener is {numberOfSafeReportsWithDampener}."); // 4, 514
