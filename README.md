@@ -11,3 +11,5 @@ The solutions here are written in C# and adheres to these rules:
 - Code is written compact, but not extremely compact. This means a lot of chained LINQ expressions
   instead of `for`-loops, but variable names should still be descriptive.
 - Few lines of code has higher priority than not having code duplication.
+- The latest version of C# and .NET can be used, and preferably should if there's a suitable task
+  that can use the new features of the language and runtime.
